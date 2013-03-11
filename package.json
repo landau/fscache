@@ -1,43 +1,45 @@
 {
-    "name": "filecache",
-    "main": "lib/cache.js",
-    "version": "0.0.1",
-    "author": {
-        "name": "Trevor Landau",
-        "email": "landautrevor@gmail.com"
-    },
-    "description": "A caching utility that stores data as json in files",
-    "scripts": {
-        "test": "grunt"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/landau/twit-cli"
-    },
-    "bugs": {
-        "url": "https://github.com/landau/twit-cli/issues"
-    },
-    "keywords": [
-        "cache",
-        "file",
-        "filesystem",
-        "utility",
-        "util"
-    ],
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "https://github.com/landau/twit-cli/LICENSE-MIT"
-        }
-    ],
-    "dependencies": {},
-    "devDependencies": {
-        "grunt": "~0.4.0",
-        "grunt-contrib-jshint": "~0.2.0",
-        "grunt-mocha-test": "~0.2.0",
-        "should": "~1.2.2"
-    },
-    "engines": {
-        "node": ">=0.8.0"
+  "name": "filecache",
+  "main": "lib/cache.js",
+  "version": "0.0.1",
+  "author": {
+    "name": "Trevor Landau",
+    "email": "landautrevor@gmail.com"
+  },
+  "description": "A caching utility that stores data as json in files",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/landau/twit-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/landau/twit-cli/issues"
+  },
+  "keywords": [
+    "cache",
+    "file",
+    "filesystem",
+    "utility",
+    "util"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/landau/twit-cli/LICENSE-MIT"
     }
+  ],
+  "dependencies": {
+    "async": "~0.2.6"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-jshint": "~0.2.0",
+    "grunt-mocha-test": "~0.2.0",
+    "should": "~1.2.2"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
 }
