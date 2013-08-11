@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/landau/twit-cli"
+    "url": "https://github.com/landau/fscache"
   },
   "bugs": {
-    "url": "https://github.com/landau/twit-cli/issues"
+    "url": "https://github.com/landau/fscache/issues"
   },
   "keywords": [
     "cache",
@@ -27,7 +27,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/landau/twit-cli/LICENSE-MIT"
+      "url": "https://github.com/landau/fscache/LICENSE-MIT"
     }
   ],
   "dependencies": {
