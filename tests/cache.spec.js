@@ -27,8 +27,6 @@ describe("Cache", function () {
         fs.rmdirSync(dir);
     });
 
-
-
     describe("Sync methods", function () {
         beforeEach(function () {
             this.cache = Cache.createSync(50, dir);
@@ -161,4 +159,25 @@ describe("Cache", function () {
         });
     });
 
+    describe("Support ttl null", function() {
+      beforeEach(function() {
+        this.cache = Cache.createSync(dir);
+        this.cache.putSync(key, key);
+      });
+
+      it("should make a directory to store cached files", function () {
+          fs.existsSync(dir).should.equal(true);
+          fs.statSync(dir).isDirectory().should.equal(true);
+      });
+
+      it("should save data to a file", function () {
+          fs.existsSync(filepath).should.equal(true);
+          fs.statSync(filepath).isFile().should.equal(true);
+      });
+
+      it("should retrieve cached data from a file", function () {
+          var data = this.cache.getSync(key);
+          data.foo.should.equal("bar");
+      });
+    });
 });
