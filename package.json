@@ -8,7 +8,8 @@
   },
   "description": "A caching utility that stores data as json in files",
   "scripts": {
-    "test": "grunt"
+    "pretest": "eslint -c .eslintrc .",
+    "test": "mocha --recursive ./test"
   },
   "repository": {
     "type": "git",
@@ -34,9 +35,8 @@
     "async": "~0.2.6"
   },
   "devDependencies": {
-    "grunt": "~0.4.0",
-    "grunt-contrib-jshint": "~0.2.0",
-    "grunt-mocha-test": "~0.2.0",
+    "eslint": "3.19.0",
+    "mocha": "3.2.0",
     "should": "~1.2.2"
   },
   "engines": {
