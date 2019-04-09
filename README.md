@@ -1,3 +1,7 @@
+# DEPRECATED!
+
+A much better option is to use `Levelup` & `RocksDB`
+
 `version 0.0.1`
 
 # FSCache
